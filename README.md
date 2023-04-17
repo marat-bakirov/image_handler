@@ -3,7 +3,7 @@ This project requires python 3.10
 
 ### Clone repo
 ```shell
-git clone "ssh link"
+git clone git@github.com:marat-bakirov/image_handler.git
 ```
 
 ### Create virtual environment
