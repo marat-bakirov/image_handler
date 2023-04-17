@@ -1,0 +1,21 @@
+version: '3.3'
+
+services:
+
+  image_redis:
+    container_name: image_redis
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+
+  image_db:
+    container_name: image_db
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=image_registrator
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+    ports:
+      - '5432:5432'
+
